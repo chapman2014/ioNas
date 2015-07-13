@@ -1,0 +1,31 @@
+﻿生成启动时间为 2015/7/13 18:51:46。
+     1>项目“D:\ligenProject\ioNas\readNas\readNas\readNas.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\readNas.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         所有输出均为最新。
+         所有输出均为最新。
+         D:\vs2010\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /Od /Oy- /D _CRT_SECURE_NO_DEPRECATE /D _CRT_SECURE_NO_WARNINGS /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\readNas.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ioNas.cpp
+         ioNas.cpp
+       ManifestResourceCompile:
+         所有输出均为最新。
+       Link:
+         D:\vs2010\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\ligenProject\ioNas\readNas\Debug\readNas.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\readNas.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\ligenProject\ioNas\readNas\Debug\readNas.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\ligenProject\ioNas\readNas\Debug\readNas.lib" /MACHINE:X86 Debug\readNas.exe.embed.manifest.res
+         Debug\main.obj
+         Debug\MTriangle.obj
+         Debug\ioNas.obj
+         Debug\stdafx.obj
+       Manifest:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\readNas.exe.embed.manifest" /manifest Debug\readNas.exe.intermediate.manifest
+         所有输出均为最新。
+       LinkEmbedManifest:
+         所有输出均为最新。
+         readNas.vcxproj -> D:\ligenProject\ioNas\readNas\Debug\readNas.exe
+       FinalizeBuildStatus:
+         正在删除文件“Debug\readNas.unsuccessfulbuild”。
+         正在对“Debug\readNas.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\ligenProject\ioNas\readNas\readNas\readNas.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.29
