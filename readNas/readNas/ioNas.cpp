@@ -6,6 +6,10 @@
 #include <map>
 #include <vector>
 
+map<int, MVertex*> vertexData;
+
+map<int, std::vector<MTriangle*> > triangleData;
+
 static int getFormatBDF(char *buffer, int &keySize)
 {
 	if(buffer[keySize] == '*'){ keySize++; return 2; } // long fields
@@ -177,7 +181,8 @@ int readBDF(const string &name)
 		printf("Unable to open file '%s'", name.c_str());
 		return 0;
 	}
-
+	vertexData.clear();
+	triangleData.clear();
 	char buffer[256];
 	std::map<int, MVertex*> vertexMap;
     std::map<int, std::vector<MTriangle*> > elements;
@@ -196,7 +201,7 @@ int readBDF(const string &name)
 			}
 		}
 	}
-	printf("%d vertices", vertexMap.size());
+	printf("%d vertices\n", vertexMap.size());
 	 vertexData=vertexMap;
 	
 	//read triangle

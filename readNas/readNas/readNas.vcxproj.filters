@@ -30,6 +30,27 @@
     <ClInclude Include="ioNas.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="DivideAndConquer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="robustPredicates.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="meshGFace.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SPoint2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SPoint3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SBoundingBox3d.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SVector3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -42,6 +63,15 @@
       <Filter>头文件</Filter>
     </ClCompile>
     <ClCompile Include="ioNas.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="robustPredicates.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DivideAndConquer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="meshGFace.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

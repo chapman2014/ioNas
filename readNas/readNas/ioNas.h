@@ -10,7 +10,3 @@ using namespace std;
 int readBDF(const string &name);
 int writeBDF(const string&name);
 
-
-static map<int, MVertex*> vertexData;
-
-static map<int, std::vector<MTriangle*> > triangleData;

@@ -21,12 +21,12 @@ public:
 	// the cartesian coordinates of the vertex
 	double _x, _y, _z;
 
-    MVertex(double x, double y, double z,int num)
+    MVertex(double x, double y, double z,int index)
 	{
 		_x=x;
 		_y=y;
 		_z=z;
-		_index=num;
+		_index=index;
 	}
 	virtual ~MVertex(){}
 

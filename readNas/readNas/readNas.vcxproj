@@ -76,12 +76,20 @@
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DivideAndConquer.h" />
+    <ClInclude Include="meshGFace.h" />
     <ClInclude Include="MVertex.h" />
     <ClInclude Include="ioNas.h" />
+    <ClInclude Include="robustPredicates.h" />
+    <ClInclude Include="SBoundingBox3d.h" />
+    <ClInclude Include="SPoint2.h" />
+    <ClInclude Include="SPoint3.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SVector3.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DivideAndConquer.cpp" />
     <ClCompile Include="main.cpp">
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</CompileAsManaged>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -98,8 +106,10 @@
       <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Async</ExceptionHandling>
     </ClCompile>
+    <ClCompile Include="meshGFace.cpp" />
     <ClCompile Include="MTriangle.h" />
     <ClCompile Include="ioNas.cpp" />
+    <ClCompile Include="robustPredicates.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
