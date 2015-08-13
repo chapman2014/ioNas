@@ -5,6 +5,7 @@
 #include <map>
 #include "MVertex.h"
 #include "MTriangle.h"
+#include "MLine.h"
 using namespace std;
 
 int readBDF(const string &name);

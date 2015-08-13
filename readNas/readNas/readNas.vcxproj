@@ -78,6 +78,7 @@
   <ItemGroup>
     <ClInclude Include="DivideAndConquer.h" />
     <ClInclude Include="meshGFace.h" />
+    <ClInclude Include="MLine.h" />
     <ClInclude Include="MVertex.h" />
     <ClInclude Include="ioNas.h" />
     <ClInclude Include="robustPredicates.h" />

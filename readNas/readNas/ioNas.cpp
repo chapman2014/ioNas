@@ -10,6 +10,7 @@ map<int, MVertex*> vertexData;
 
 map<int, std::vector<MTriangle*> > triangleData;
 
+map<int,MLine*> lineData;
 static int getFormatBDF(char *buffer, int &keySize)
 {
 	if(buffer[keySize] == '*'){ keySize++; return 2; } // long fields
@@ -36,7 +37,7 @@ static double atofBDF(char *str)
 	char tmp[32];
 	int j = 0, leading_minus = 1;
 	for(int i = 0; i < len; i++){
-		if(leading_minus && str[i] != ' '  && str[i] != '-') leading_minus = 0;
+		if(leading_minus && str[i] != ' '  && str[i] != '-') leading_minus = 0;//遇到的第一个不是负号
 		if(!leading_minus && str[i] == '-') tmp[j++] = 'E';
 		if(str[i] == '+') tmp[j++] = 'E';
 		tmp[j++] = str[i];
@@ -185,8 +186,8 @@ int readBDF(const string &name)
 	triangleData.clear();
 	char buffer[256];
 	std::map<int, MVertex*> vertexMap;
-    std::map<int, std::vector<MTriangle*> > elements;
-
+    std::map<int, std::vector<MTriangle*> > elements1;
+	std::map<int, std::vector<MLine*> > elements0;
 	// nodes can be defined after elements, so parse the file twice
 
 	while(!feof(fp)) {
@@ -212,13 +213,21 @@ int readBDF(const string &name)
 		if(buffer[0] != '$'){ // skip comments
 			int num, region;
 			std::vector<MVertex*> vertices;
-		    if(!strncmp(buffer, "CTRIA3", 6)){
+			if(!strncmp(buffer, "CBAR", 4)){
+				if(readElementBDF(fp, buffer, 4, 2, num, region, vertices, vertexMap))
+					elements0[region].push_back(new MLine(vertices, num));
+			}
+			else if(!strncmp(buffer, "CROD", 4)){
+				if(readElementBDF(fp, buffer, 4, 2, num, region, vertices, vertexMap))
+					elements0[region].push_back(new MLine(vertices, num));
+			}
+		    else if(!strncmp(buffer, "CTRIA3", 6)){
 				if(readElementBDF(fp, buffer, 6, 3, num, region, vertices, vertexMap))
-					elements[region].push_back(new MTriangle(vertices,num));
+					elements1[region].push_back(new MTriangle(vertices,num));
 			}
 		}
 	}
-    triangleData=elements;
+    triangleData=elements1;
 	fclose(fp);
 	return 1;
 }

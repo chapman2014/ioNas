@@ -107,7 +107,6 @@ bool meshGenerator()
 				printf("Skipping bad triangle %d", i);
 				 continue;
 			 }
-			vector<MVertex*> v;
 			v.clear();
 			int hahha=doc.points[a].id;
 			MVertex* tmp=vertexData.find(doc.points[a].id)->second;
