@@ -77,6 +77,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DivideAndConquer.h" />
+    <ClInclude Include="GEdge.h" />
+    <ClInclude Include="Generator.h" />
+    <ClInclude Include="GEntity.h" />
+    <ClInclude Include="GModel.h" />
+    <ClInclude Include="GPoint.h" />
+    <ClInclude Include="GVertex.h" />
+    <ClInclude Include="meshGEdge.h" />
     <ClInclude Include="meshGFace.h" />
     <ClInclude Include="MLine.h" />
     <ClInclude Include="MVertex.h" />
@@ -91,6 +98,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DivideAndConquer.cpp" />
+    <ClCompile Include="Generator.cpp" />
+    <ClCompile Include="GVertex.cpp" />
     <ClCompile Include="main.cpp">
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</CompileAsManaged>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -107,6 +116,7 @@
       <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Async</ExceptionHandling>
     </ClCompile>
+    <ClCompile Include="meshGEdge.cpp" />
     <ClCompile Include="meshGFace.cpp" />
     <ClCompile Include="MTriangle.h" />
     <ClCompile Include="ioNas.cpp" />

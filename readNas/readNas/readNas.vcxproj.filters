@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Mesh">
+      <UniqueIdentifier>{5d25c758-6a24-4391-aa66-c7e21376422c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
@@ -54,6 +57,27 @@
     <ClInclude Include="MLine.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="GEdge.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GModel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GEntity.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GVertex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GPoint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Generator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="meshGEdge.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -76,6 +100,15 @@
     </ClCompile>
     <ClCompile Include="meshGFace.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GVertex.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Generator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="meshGEdge.cpp">
+      <Filter>Mesh</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

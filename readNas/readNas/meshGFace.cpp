@@ -13,8 +13,14 @@ extern map<int, MVertex*> vertexData;
 
 extern map<int, std::vector<MTriangle*> > triangleData;
 
+//已有：1D离散化的数据，比如点集
+//输出：包含bounding box 的三角化，不包含边恢复
+// Builds An initial triangular mesh that respects the boundaries of
+// the domain, including embedded points and surfaces  2DMesh第一步，此前应该已经获得1D离散化的数据
 bool meshGenerator()
 {
+
+
 	//获得uv之后
    //对Doc格式进行处理
     // DocRecord doc(4);
