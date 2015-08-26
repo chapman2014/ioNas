@@ -1,6 +1,7 @@
+#ifndef _GENTITY_H_
+#define _GENTITY_H_
 
-
-
+class MVertex;
 class GVertex;
 class GEdge;
 class GModel;
@@ -39,7 +40,51 @@ public:
 		FAILED
 	};
 
-	
+	// all known entity types
+	enum GeomType {
+		Unknown,
+		Point,
+		BoundaryLayerPoint,
+		Line,
+		Circle,
+		Ellipse,
+		Conic,
+		Parabola,
+		Hyperbola,
+		TrimmedCurve,
+		OffsetCurve,
+		BSpline,
+		Bezier,
+		ParametricCurve,
+		BoundaryLayerCurve,
+		CompoundCurve,
+		DiscreteCurve,
+		Plane,
+		Nurb,
+		Cylinder,
+		Sphere,
+		Cone,
+		Torus,
+		RuledSurface,
+		ParametricSurface,
+		ProjectionFace,
+		BSplineSurface,
+		BezierSurface,
+		SurfaceOfRevolution,
+		BoundaryLayerSurface,
+		DiscreteSurface,
+		CompoundSurface,
+		Volume,
+		DiscreteVolume,
+		CompoundVolume,
+		PartitionVertex,
+		PartitionCurve,
+		PartitionSurface,
+		HiddenSurface
+	};
+	 virtual int dim() const { return -1; }
+	 // underlying geometric representation of this entity.
+	 virtual GeomType geomType() const { return Unknown; }
 
 };
 
@@ -50,3 +95,5 @@ public:
 		return ent1->tag() < ent2->tag();
 	}
 };
+
+#endif

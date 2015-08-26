@@ -11,6 +11,7 @@ map<int, MVertex*> vertexData;
 map<int, std::vector<MTriangle*> > triangleData;
 
 map<int,MLine*> lineData;
+
 static int getFormatBDF(char *buffer, int &keySize)
 {
 	if(buffer[keySize] == '*'){ keySize++; return 2; } // long fields

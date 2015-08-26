@@ -5,10 +5,6 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="头文件">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
     <Filter Include="资源文件">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
@@ -16,66 +12,97 @@
     <Filter Include="Mesh">
       <UniqueIdentifier>{5d25c758-6a24-4391-aa66-c7e21376422c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{520ce99c-de9f-4948-b4f8-8f3b29d8144a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Geo">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
-      <Filter>头文件</Filter>
+      <Filter>Geo</Filter>
     </ClInclude>
     <ClInclude Include="targetver.h">
-      <Filter>头文件</Filter>
+      <Filter>Geo</Filter>
     </ClInclude>
     <ClInclude Include="MVertex.h">
-      <Filter>头文件</Filter>
+      <Filter>Geo</Filter>
     </ClInclude>
     <ClInclude Include="ioNas.h">
-      <Filter>头文件</Filter>
+      <Filter>Geo</Filter>
     </ClInclude>
     <ClInclude Include="DivideAndConquer.h">
-      <Filter>头文件</Filter>
+      <Filter>Geo</Filter>
     </ClInclude>
     <ClInclude Include="robustPredicates.h">
-      <Filter>头文件</Filter>
+      <Filter>Geo</Filter>
     </ClInclude>
     <ClInclude Include="meshGFace.h">
-      <Filter>头文件</Filter>
+      <Filter>Geo</Filter>
     </ClInclude>
     <ClInclude Include="SPoint2.h">
-      <Filter>头文件</Filter>
+      <Filter>Geo</Filter>
     </ClInclude>
     <ClInclude Include="SPoint3.h">
-      <Filter>头文件</Filter>
+      <Filter>Geo</Filter>
     </ClInclude>
     <ClInclude Include="SBoundingBox3d.h">
-      <Filter>头文件</Filter>
+      <Filter>Geo</Filter>
     </ClInclude>
     <ClInclude Include="SVector3.h">
-      <Filter>头文件</Filter>
+      <Filter>Geo</Filter>
     </ClInclude>
     <ClInclude Include="MLine.h">
-      <Filter>头文件</Filter>
+      <Filter>Geo</Filter>
     </ClInclude>
     <ClInclude Include="GEdge.h">
-      <Filter>头文件</Filter>
+      <Filter>Geo</Filter>
     </ClInclude>
     <ClInclude Include="GModel.h">
-      <Filter>头文件</Filter>
+      <Filter>Geo</Filter>
     </ClInclude>
     <ClInclude Include="GEntity.h">
-      <Filter>头文件</Filter>
+      <Filter>Geo</Filter>
     </ClInclude>
     <ClInclude Include="GVertex.h">
-      <Filter>头文件</Filter>
+      <Filter>Geo</Filter>
     </ClInclude>
     <ClInclude Include="GPoint.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Generator.h">
-      <Filter>头文件</Filter>
+      <Filter>Geo</Filter>
     </ClInclude>
     <ClInclude Include="meshGEdge.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Range.h">
+      <Filter>Geo</Filter>
+    </ClInclude>
+    <ClInclude Include="BackgroundMesh.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Context.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="gmshEdge.h">
+      <Filter>Geo</Filter>
+    </ClInclude>
+    <ClInclude Include="Geo.h">
+      <Filter>Geo</Filter>
+    </ClInclude>
+    <ClInclude Include="GeoInterpolation.h">
+      <Filter>Geo</Filter>
+    </ClInclude>
+    <ClInclude Include="ListUtils.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="gmshSurface.h">
+      <Filter>Geo</Filter>
+    </ClInclude>
+    <ClInclude Include="Generator.h">
       <Filter>Mesh</Filter>
     </ClInclude>
   </ItemGroup>
@@ -87,7 +114,7 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="MTriangle.h">
-      <Filter>头文件</Filter>
+      <Filter>Geo</Filter>
     </ClCompile>
     <ClCompile Include="ioNas.cpp">
       <Filter>源文件</Filter>
@@ -104,10 +131,28 @@
     <ClCompile Include="GVertex.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Generator.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="meshGEdge.cpp">
+      <Filter>Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="BackgroundMesh.cpp">
+      <Filter>Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Context.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="GEdge.cpp">
+      <Filter>Geo</Filter>
+    </ClCompile>
+    <ClCompile Include="gmshEdge.cpp">
+      <Filter>Geo</Filter>
+    </ClCompile>
+    <ClCompile Include="GeoInterpolation.cpp">
+      <Filter>Geo</Filter>
+    </ClCompile>
+    <ClCompile Include="ListUtils.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Generator.cpp">
       <Filter>Mesh</Filter>
     </ClCompile>
   </ItemGroup>

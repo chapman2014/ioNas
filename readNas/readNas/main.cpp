@@ -24,6 +24,7 @@
 #include <iostream>
 #include "ioNas.h"
 #include "meshGFace.h"
+#include "Generator.h"
 using namespace std;
 
 

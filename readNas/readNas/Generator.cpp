@@ -1,9 +1,11 @@
+#include "StdAfx.h"
 #include <stdlib.h>
 #include <stack>
 #include "GModel.h"
 #include "MLine.h"
 #include "MTriangle.h"
 #include "meshGFace.h"
+#include "meshGEdge.h"
 #include <algorithm>
 
 

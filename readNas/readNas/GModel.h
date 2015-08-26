@@ -47,4 +47,9 @@ public:
 	eiter lastEdge() { return edges.end(); }
 	viter lastVertex() { return vertices.end(); }
 
+	// set/get entity that is currently being meshed (for error reporting)
+	void setCurrentMeshEntity(GEntity *e){ _currentMeshEntity = e; }
+	GEntity *getCurrentMeshEntity(){ return _currentMeshEntity; }
+
+
 };
