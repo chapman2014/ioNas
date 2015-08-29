@@ -176,7 +176,7 @@ static int readElementBDF(FILE *fp, char *buffer, int keySize, int numVertices,
 	return 1;
 }
 
-int readBDF(const string &name)
+int readBDF(const string &name,GModel * m)
 {
 	FILE *fp = fopen(name.c_str(), "r");
 	if(!fp){
@@ -199,14 +199,14 @@ int readBDF(const string &name)
 				int num;
 				double x, y, z;
 				if(!readVertexBDF(fp, buffer, 4, &num, &x, &y, &z)) break;
-				vertexMap[num] = new MVertex(x, y, z, num);
+				vertexMap[num] = new MVertex(x, y, z,0, num);
 			}
 		}
 	}
 	printf("%d vertices\n", vertexMap.size());
 	 vertexData=vertexMap;
 	
-	//read triangle
+	//read triangle and line
 	rewind(fp);
 	while(!feof(fp)) {
 		for(unsigned int i = 0; i < sizeof(buffer); i++) buffer[i] = '\0';
@@ -230,6 +230,9 @@ int readBDF(const string &name)
 	}
     triangleData=elements1;
 	fclose(fp);
+
+	//将数据存入Gmodel
+
 	return 1;
 }
 

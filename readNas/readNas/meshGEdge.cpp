@@ -218,6 +218,9 @@ void meshGEdge::operator() (GEdge *ge)
 		printf("Curve %d has a zero length", ge->tag());
 		a = 0.;
 		N = 1;
+	} else{
+		a = Integration(ge, t_begin, t_end, F_Lc, Points,
+			CTX::instance()->mesh.lcIntegrationPrecision);
 	}
 	// if the curve is periodic and if the begin vertex is identical to
 	// the end vertex and if this vertex has only one model curve

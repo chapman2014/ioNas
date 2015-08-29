@@ -105,6 +105,12 @@
     <ClInclude Include="Generator.h">
       <Filter>Mesh</Filter>
     </ClInclude>
+    <ClInclude Include="discreteVertex.h">
+      <Filter>Geo</Filter>
+    </ClInclude>
+    <ClInclude Include="MElement.h">
+      <Filter>Geo</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -126,9 +132,6 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="meshGFace.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="GVertex.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="meshGEdge.cpp">
@@ -154,6 +157,12 @@
     </ClCompile>
     <ClCompile Include="Generator.cpp">
       <Filter>Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="GVertex.cpp">
+      <Filter>Geo</Filter>
+    </ClCompile>
+    <ClCompile Include="GModel.cpp">
+      <Filter>Geo</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

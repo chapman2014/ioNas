@@ -47,6 +47,9 @@ public:
 
 	// get the edges that this vertex bounds
 	virtual std::list<GEdge*> edges() const{ return l_edges; }
+	// add/delete an edge bounded by this vertex
+	void addEdge(GEdge *e);
+	void delEdge(GEdge *e);
 };
 
 

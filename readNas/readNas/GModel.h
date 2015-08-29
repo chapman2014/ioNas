@@ -1,3 +1,4 @@
+#pragma once 
 #include <algorithm>
 #include <vector>
 #include <set>
@@ -47,9 +48,20 @@ public:
 	eiter lastEdge() { return edges.end(); }
 	viter lastVertex() { return vertices.end(); }
 
+	// add/remove an entity in the model
+	void add(GEdge *e) { edges.insert(e); }
+	void add(GVertex *v) { vertices.insert(v);}
+
 	// set/get entity that is currently being meshed (for error reporting)
 	void setCurrentMeshEntity(GEntity *e){ _currentMeshEntity = e; }
 	GEntity *getCurrentMeshEntity(){ return _currentMeshEntity; }
+
+	// find the entity with the given tag
+	GEdge *getEdgeByTag(int n) const;
+	GVertex *getVertexByTag(int n) const;
+
+	//Ìí¼Óµãµ½model
+	void _storePointInEntities(std::map<int, MVertex*> &map);
 
 
 };

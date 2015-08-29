@@ -25,6 +25,7 @@
 #include "ioNas.h"
 #include "meshGFace.h"
 #include "Generator.h"
+#include "GModel.h"
 using namespace std;
 
 
@@ -32,7 +33,8 @@ using namespace std;
 int _tmain(int argc, _TCHAR* argv[])
 {
 	string name="C:\\Users\\lin\\Desktop\\plane.nas";
-	readBDF(name);
+	GModel *m;
+	readBDF(name,m);//将数据读入m
 	meshGenerator();
 	string name2="C:\\Users\\lin\\Desktop\\plane2.nas";
 	writeBDF(name2);

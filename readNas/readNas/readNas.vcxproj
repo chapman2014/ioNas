@@ -78,6 +78,7 @@
   <ItemGroup>
     <ClInclude Include="BackgroundMesh.h" />
     <ClInclude Include="Context.h" />
+    <ClInclude Include="discreteVertex.h" />
     <ClInclude Include="DivideAndConquer.h" />
     <ClInclude Include="GEdge.h" />
     <ClInclude Include="Generator.h" />
@@ -90,6 +91,7 @@
     <ClInclude Include="GPoint.h" />
     <ClInclude Include="GVertex.h" />
     <ClInclude Include="ListUtils.h" />
+    <ClInclude Include="MElement.h" />
     <ClInclude Include="meshGEdge.h" />
     <ClInclude Include="meshGFace.h" />
     <ClInclude Include="MLine.h" />
@@ -111,6 +113,7 @@
     <ClCompile Include="GEdge.cpp" />
     <ClCompile Include="Generator.cpp" />
     <ClCompile Include="GeoInterpolation.cpp" />
+    <ClCompile Include="GModel.cpp" />
     <ClCompile Include="gmshEdge.cpp" />
     <ClCompile Include="GVertex.cpp" />
     <ClCompile Include="ListUtils.cpp" />

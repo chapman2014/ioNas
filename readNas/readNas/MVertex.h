@@ -2,11 +2,10 @@
 #include <stdio.h>
 #include <set>
 #include <map>
+class GEntity;
+class GEdge;
 
 class MVertex{
-
-	
-
 public:
 	// the immutable id number of the vertex (this number is unique and
 	// is guaranteed never to change once a vertex has been created)
@@ -21,7 +20,11 @@ public:
 	// the cartesian coordinates of the vertex
 	double _x, _y, _z;
 
-    MVertex(double x, double y, double z,int index)
+	// the geometrical entity the vertex is associated with
+	GEntity *_ge;
+
+
+    MVertex(double x, double y, double z£¬GEntity *ge=0,int index)£º_ge(ge)
 	{
 		_x=x;
 		_y=y;

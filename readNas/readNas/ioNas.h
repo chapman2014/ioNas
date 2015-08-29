@@ -6,8 +6,9 @@
 #include "MVertex.h"
 #include "MTriangle.h"
 #include "MLine.h"
+#include "GModel.h"
 using namespace std;
 
-int readBDF(const string &name);
+int readBDF(const string &name,GModel *m);
 int writeBDF(const string&name);
 

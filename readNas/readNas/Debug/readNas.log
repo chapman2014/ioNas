@@ -1,43 +1,10 @@
-﻿生成启动时间为 2015/8/26 16:06:06。
-     1>项目“D:\ligenProject\ioNas\readNas\readNas\readNas.vcxproj”在节点 2 上(build 个目标)。
-     1>InitializeBuildStatus:
-         正在对“Debug\readNas.unsuccessfulbuild”执行 Touch 任务。
-       ClCompile:
-         所有输出均为最新。
-         D:\vs2010\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /Od /Oy- /D _CRT_SECURE_NO_DEPRECATE /D _CRT_SECURE_NO_WARNINGS /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\readNas.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt BackgroundMesh.cpp GEdge.cpp GVertex.cpp Generator.cpp ListUtils.cpp MTriangle.h gmshEdge.cpp ioNas.cpp meshGEdge.cpp meshGFace.cpp
-         meshGEdge.cpp
-     1>meshGEdge.cpp(260): error C2061: 语法错误: 标识符“MEdgeVertex”
-         ListUtils.cpp
-     1>ListUtils.cpp(1): warning C4627: “#include <stdlib.h>”: 在查找预编译头使用时跳过
-                 将指令添加到“StdAfx.h”或重新生成预编译头
-     1>ListUtils.cpp(3): warning C4627: “#include <string.h>”: 在查找预编译头使用时跳过
-                 将指令添加到“StdAfx.h”或重新生成预编译头
-     1>ListUtils.cpp(4): warning C4627: “#include <errno.h>”: 在查找预编译头使用时跳过
-                 将指令添加到“StdAfx.h”或重新生成预编译头
-     1>ListUtils.cpp(5): warning C4627: “#include <sys/types.h>”: 在查找预编译头使用时跳过
-                 将指令添加到“StdAfx.h”或重新生成预编译头
-     1>ListUtils.cpp(6): warning C4627: “#include "ListUtils.h"”: 在查找预编译头使用时跳过
-                 将指令添加到“StdAfx.h”或重新生成预编译头
-     1>ListUtils.cpp(21): fatal error C1010: 在查找预编译头时遇到意外的文件结尾。是否忘记了向源中添加“#include "StdAfx.h"”?
-         Generator.cpp
-     1>Generator.cpp(23): error C3861: “Mesh1D”: 找不到标识符
-     1>Generator.cpp(29): error C3861: “Mesh2D”: 找不到标识符
-         正在生成代码...
-         正在编译...
-         BackgroundMesh.cpp
-         正在生成代码...
-         正在编译...
-         meshGFace.cpp
-         ioNas.cpp
-         gmshEdge.cpp
-     1>gmshEdge.cpp(22): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
-         GEdge.cpp
-         正在生成代码...
-         正在跳过...(未检测到相关更改)
-         MTriangle.h
-         GVertex.cpp
-     1>已完成生成项目“D:\ligenProject\ioNas\readNas\readNas\readNas.vcxproj”(build 个目标)的操作 - 失败。
+﻿生成启动时间为 2015/8/27 17:05:46。
+     1>项目“D:\ligenProject\ioNas\readNas\readNas\readNas.vcxproj”在节点 2 上(ClCompile 个目标)。
+     1>ClCompile:
+         D:\vs2010\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /Od /Oy- /D _CRT_SECURE_NO_DEPRECATE /D _CRT_SECURE_NO_WARNINGS /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\readNas.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt GModel.cpp
+         GModel.cpp
+     1>已完成生成项目“D:\ligenProject\ioNas\readNas\readNas\readNas.vcxproj”(ClCompile 个目标)的操作。
 
-生成失败。
+生成成功。
 
-已用时间 00:00:06.76
+已用时间 00:00:00.79
